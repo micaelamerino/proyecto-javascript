@@ -1,0 +1,190 @@
+
+/*Generales*/
+.subtitulo{
+    font-family: 'Pacifico', cursive;
+    color: rgba(207, 45, 45, 1);
+}
+.subtitulo1{
+    font-family: 'Outfit', sans-serif;
+}
+.subtitulo2{
+    font-family: 'Pacifico', cursive;
+    color: rgba(235, 212, 6, 1);
+}
+.parrafo{
+    font-family: 'Outfit', sans-serif;
+}
+/*Menú*/
+.navbar-brand{
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0.1em 0.1em rgba(235, 212, 6, 1);
+}
+.navbar a{
+    font-family: 'Outfit', sans-serif;
+    color: #000;
+}
+.navbar a:hover{
+    color: rgba(207, 45, 45, 1);
+}
+/*Carousel*/
+.carousel-item{
+    height: 25rem;
+}
+.primer-item{
+    background-image: url(../assets/imagenes/image.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.segundo-item{
+    background-image: url(../assets/imagenes/image2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.tercer-item{
+    background-image: url(../assets/imagenes/image3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.cuarto-item{
+    background-image: url(../assets/imagenes/image4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.quinto-item{
+    background-image: url(../assets/imagenes/image5.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.frase-carousel{
+    font-family: 'Pacifico', cursive;
+    text-shadow: 0.1em 0.1em #000;
+}
+/*Sección ofertas*/
+.ofertas{
+    background-color: rgba(235, 212, 6, 1);
+}
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card img{
+    width: 100%;
+}
+.btn-comprar{
+    background-color: rgba(207, 45, 45, 1);
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-family:'Outfit', sans-serif;
+}
+.btn-comprar:hover{
+    color: #fff;
+    background-color: rgba(207, 45, 45, 0.774);
+    transition: 0.5s;
+}
+.btn-carrito{
+    color: rgba(207, 45, 45, 1);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family:'Outfit', sans-serif;
+    background-color: rgb(226, 214, 106);
+}
+.btn-carrito:hover{
+    color: rgba(207, 45, 45, 1);
+    background-color: rgba(226, 214, 106, 0.774);
+    transition: 0.5s;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/*Historia*/
+.img-main{
+    width: 300px;
+}
+.img-main img{
+    width: 100%;
+}
+/*Comprar*/
+.compra-online a{
+    text-decoration: none;
+    color: rgba(207, 45, 45, 1);
+}
+.compra-online a:hover{
+    color: rgba(207, 45, 45, 0.774);
+}
+/*Tienda*/
+.tienda{
+    background-color: #000;
+}
+#cantidad{
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(221, 235, 252);
+    font-family: 'Outfit', sans-serif;
+    padding: 5px 0;
+}
+/*Contacto*/
+.form-contacto{
+    width: 300px;
+}
+input, textarea{
+    border-radius: 5px;
+    border-color: rgba(156, 207, 45, 0.774);
+}
+.input{
+    font-family: 'Outfit', sans-serif;
+}
+/*Footer*/
+.copyright{
+    display: flex;
+}
+.texto{
+    width: 90%;
+}
+/*Responsive*/
+@media (max-width:560px){
+    .cards{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .cards .card{
+        width: 70%;
+    }
+}
+@media (min-width:560px){
+    .cards{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .cards .card{
+        width: 45%;
+    }
+}
+@media (min-width:768px){
+    .cards .card{
+        width: 20%;
+    }
+}
+@media (min-width:600px){
+    .datos-sitio{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+
+    
