@@ -3,6 +3,34 @@
 //Retira su compra en el local o desea que se la enviemos?
 //Si el monto total con el descuento ya aplicado es mayor a $5000 "tiene envio gratis", si el monto es menor a $5000 calcular el total más el envío cuyo valor es de $1000 (suma)
 
+class Producto {
+    constructor(nombre, color, peso, proteinas, calorias, precio){
+        this.nombre=nombre;
+        this.color=color;
+        this.peso=peso;
+        this.proteinas=proteinas;
+        this.calorias=calorias;
+        this.precio=precio;
+        this.info=`Huevo ${this.nombre}, ${this.color}, pesa ${this.peso} gr, contiene ${this.proteinas} gr de proteina y ${this.calorias} kcal, el maple cuesta $ ${this.precio}`;
+    }
+    VerInfo(){
+        alert(this.info)
+    }
+}
+
+const prod1 = new Producto ("chico", "blanco", 63, 8, 93, 500);
+const prod2 = new Producto ("mediano", "blanco", 70, 9, 108, 1000);
+const prod3 = new Producto ("super", "blanco", 77, 10, 120, 1500);
+const prod4 = new Producto ("chico", "color", 63, 8, 93, 600);
+const prod5 = new Producto ("mediano", "color", 70, 9, 108, 1100);
+const prod6 = new Producto ("super", "color", 77, 10, 120, 1600);
+
+prod1.VerInfo();
+prod2.VerInfo();
+prod3.VerInfo();
+prod4.VerInfo();
+prod5.VerInfo();
+prod6.VerInfo();
 
 function sumaProductos (producto1=0 , producto2=0){
     return producto1+producto2;
