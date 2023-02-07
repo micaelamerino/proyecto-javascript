@@ -14,6 +14,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&family=Pacifico&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script defer src="../js/bootstrap.bundle.min.js"></script>
+  <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script defer src="../js/productos.js"></script>
+  <script defer src="../js/script.js"></script>
+  <script defer src="../js/carrito.js"></script>
 </head>
 
 <body>
@@ -44,150 +50,28 @@
           <li class="nav-item">
             <a class="nav-link" href="././contacto.html">Contáctanos</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="././carrito.html"><img src="../assets/iconos/cart.svg" alt=""></a>
-          </li>
         </ul>
       </div>
     </div>
   </nav>
   <!--Tienda-->
   <main class="container-fluid tienda">
-    <div class="container texto-tienda text-center pt-3 pb-3">
-      <h1 class="subtitulo2">Tienda Online</h1>
+    <div class="container text-center pt-3 pb-3">
+      <div class="container d-flex justify-content-center pb-2">
+        <h1 class="subtitulo2">Tienda Online </h1>
+        <img id="verCarrito" class="ver-carrito" src="../assets/iconos/carts.png" alt="">
+        <div id="cantidadCarrito" class="cantidad-carrito "></div>
+      </div>
       <p class="parrafo bg-light rounded-2"><img src="../assets/iconos/truck.png" alt=""> Envíos gratis desde $4000</p>
     </div>
-    <div class="cards pb-3">
-      <div class="card text-center">
-        <img src="../assets/imagenes/maples.jpg" class="card-img-top" alt="Maples de huevos">
-        <div class="card-body">
-          <h5 class="subtitulo1">MAPLE</h5>
-          <p class="parrafo">$400</p>
-          <form action="" method="get" class="form-tienda">
-            <select name="cantidad" id="cantidad">
-              <option value="1">Cantidad: 1 unidad</option>
-              <option value="2">Cantidad: 2 unidades</option>
-              <option value="3">Cantidad: 3 unidades</option>
-            </select>
-          </form>
-          <a href="./pages/carrito.html" class="btn-comprar">Comprar ahora</a>
-          <a href="#" class="btn-carrito">Agregar al carrito</a>
-        </div>
-      </div>
-      <div class="card text-center">
-        <img src="../assets/imagenes/maples.jpg" class="card-img-top" alt="Maples de huevos">
-        <div class="card-body">
-          <h5 class="subtitulo1">MAPLE</h5>
-          <p class="parrafo">$400</p>
-          <form action="" method="get" class="form-tienda">
-            <select name="cantidad" id="cantidad">
-              <option value="1">Cantidad: 1 unidad</option>
-              <option value="2">Cantidad: 2 unidades</option>
-              <option value="3">Cantidad: 3 unidades</option>
-            </select>
-          </form>
-          <a href="./pages/carrito.html" class="btn-comprar">Comprar ahora</a>
-          <a href="#" class="btn-carrito">Agregar al carrito</a>
-        </div>
-      </div>
-      <div class="card text-center">
-        <img src="../assets/imagenes/maples.jpg" class="card-img-top" alt="Maples de huevos">
-        <div class="card-body">
-          <h5 class="subtitulo1">MAPLE</h5>
-          <p class="parrafo">$400</p>
-          <form action="" method="get" class="form-tienda">
-            <select name="cantidad" id="cantidad">
-              <option value="1">Cantidad: 1 unidad</option>
-              <option value="2">Cantidad: 2 unidades</option>
-              <option value="3">Cantidad: 3 unidades</option>
-            </select>
-          </form>
-          <a href="./pages/carrito.html" class="btn-comprar">Comprar ahora</a>
-          <a href="#" class="btn-carrito">Agregar al carrito</a>
-        </div>
-      </div>
-      <div class="card text-center">
-        <img src="../assets/imagenes/maples.jpg" class="card-img-top" alt="Maples de huevos">
-        <div class="card-body">
-          <h5 class="subtitulo1">MAPLE</h5>
-          <p class="parrafo">$400</p>
-          <form action="" method="get" class="form-tienda">
-            <select name="cantidad" id="cantidad">
-              <option value="1">Cantidad: 1 unidad</option>
-              <option value="2">Cantidad: 2 unidades</option>
-              <option value="3">Cantidad: 3 unidades</option>
-            </select>
-          </form>
-          <a href="./pages/carrito.html" class="btn-comprar">Comprar ahora</a>
-          <a href="#" class="btn-carrito">Agregar al carrito</a>
-        </div>
-      </div>
-      <div class="card text-center">
-        <img src="../assets/imagenes/maples.jpg" class="card-img-top" alt="Maples de huevos">
-        <div class="card-body">
-          <h5 class="subtitulo1">MAPLE</h5>
-          <p class="parrafo">$400</p>
-          <form action="" method="get" class="form-tienda">
-            <select name="cantidad" id="cantidad">
-              <option value="1">Cantidad: 1 unidad</option>
-              <option value="2">Cantidad: 2 unidades</option>
-              <option value="3">Cantidad: 3 unidades</option>
-            </select>
-          </form>
-          <a href="./pages/carrito.html" class="btn-comprar">Comprar ahora</a>
-          <a href="#" class="btn-carrito">Agregar al carrito</a>
-        </div>
-      </div>
-      <div class="card text-center">
-        <img src="../assets/imagenes/maples.jpg" class="card-img-top" alt="Maples de huevos">
-        <div class="card-body">
-          <h5 class="subtitulo1">MAPLE</h5>
-          <p class="parrafo">$400</p>
-          <form action="" method="get" class="form-tienda">
-            <select name="cantidad" id="cantidad">
-              <option value="1">Cantidad: 1 unidad</option>
-              <option value="2">Cantidad: 2 unidades</option>
-              <option value="3">Cantidad: 3 unidades</option>
-            </select>
-          </form>
-          <a href="./pages/carrito.html" class="btn-comprar">Comprar ahora</a>
-          <a href="#" class="btn-carrito">Agregar al carrito</a>
-        </div>
-      </div>
-      <div class="card text-center">
-        <img src="../assets/imagenes/maples.jpg" class="card-img-top" alt="Maples de huevos">
-        <div class="card-body">
-          <h5 class="subtitulo1">MAPLE</h5>
-          <p class="parrafo">$400</p>
-          <form action="" method="get" class="form-tienda">
-            <select name="cantidad" id="cantidad">
-              <option value="1">Cantidad: 1 unidad</option>
-              <option value="2">Cantidad: 2 unidades</option>
-              <option value="3">Cantidad: 3 unidades</option>
-            </select>
-          </form>
-          <a href="./pages/carrito.html" class="btn-comprar">Comprar ahora</a>
-          <a href="#" class="btn-carrito">Agregar al carrito</a>
-        </div>
-      </div>
-      <div class="card text-center">
-        <img src="../assets/imagenes/maples.jpg" class="card-img-top" alt="Maples de huevos">
-        <div class="card-body">
-          <h5 class="subtitulo1">MAPLE</h5>
-          <p class="parrafo">$400</p>
-          <form action="" method="get" class="form-tienda">
-            <select name="cantidad" id="cantidad">
-              <option value="1">Cantidad: 1 unidad</option>
-              <option value="2">Cantidad: 2 unidades</option>
-              <option value="3">Cantidad: 3 unidades</option>
-            </select>
-          </form>
-          <a href="./pages/carrito.html" class="btn-comprar">Comprar ahora</a>
-          <a href="#" class="btn-carrito">Agregar al carrito</a>
-        </div>
-      </div>
+
+    <!--Content cards-->
+    <div id="content-card" class="cards pb-3">
     </div>
   </main>
+
+  <!--Carrito-->
+  <div id="modalContainer" class="modal-container"></div>
 
   <!--Footer-->
   <footer class="container-fluid">
@@ -218,7 +102,7 @@
       </div>
     </section>
   </footer>
-  <script src="../js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

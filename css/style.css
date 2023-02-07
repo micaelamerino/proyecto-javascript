@@ -5,11 +5,11 @@
     color: rgba(207, 45, 45, 1);
 }
 .subtitulo1{
-    font-family: 'Outfit', sans-serif;
+     font-family: 'Outfit', sans-serif;
 }
 .subtitulo2{
     font-family: 'Pacifico', cursive;
-    color: rgba(235, 212, 6, 1);
+    color: rgb(236, 207, 41);
 }
 .parrafo{
     font-family: 'Outfit', sans-serif;
@@ -19,15 +19,13 @@
     border-radius: 50%;
     background-color: #fff;
     padding: 20px;
-    box-shadow: 0.1em 0.1em rgba(235, 212, 6, 1);
+    box-shadow: 0.1em 0.1em rgb(236, 217, 41);
 }
 .navbar a{
     font-family: 'Outfit', sans-serif;
-    color: #000;
+    font-weight: 500;
 }
-.navbar a:hover{
-    color: rgba(207, 45, 45, 1);
-}
+
 /*Carousel*/
 .carousel-item{
     height: 25rem;
@@ -68,20 +66,22 @@
 }
 /*Sección ofertas*/
 .ofertas{
-    background-color: rgba(235, 212, 6, 1);
+    background-color: rgba(207, 45, 45, 1);
+}
+.titulo-oferta{
+    text-shadow: 0.1em 0.1em #000;
 }
 .cards{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
-.card img{
-    width: 100%;
-}
+
 .btn-comprar{
     background-color: rgba(207, 45, 45, 1);
     padding: 10px;
     border-radius: 5px;
+    border-style: none;
     color: #fff;
     text-decoration: none;
     font-family:'Outfit', sans-serif;
@@ -91,17 +91,17 @@
     background-color: rgba(207, 45, 45, 0.774);
     transition: 0.5s;
 }
-.btn-carrito{
+.btn-oferta{
     color: rgba(207, 45, 45, 1);
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
     font-family:'Outfit', sans-serif;
-    background-color: rgb(226, 214, 106);
+    background-color: rgb(236, 207, 41);
 }
-.btn-carrito:hover{
-    color: rgba(207, 45, 45, 1);
-    background-color: rgba(226, 214, 106, 0.774);
+.btn-oferta:hover{
+    color: rgb(236, 207, 41);
+    background-color: rgba(207, 45, 45, 1);
     transition: 0.5s;
 }
 .card-body{
@@ -109,6 +109,7 @@
     flex-direction: column;
     gap: 10px;
 }
+
 /*Historia*/
 .img-main{
     width: 300px;
@@ -135,15 +136,115 @@
     font-family: 'Outfit', sans-serif;
     padding: 5px 0;
 }
-/*Contacto*/
-.form-contacto{
-    width: 300px;
+.ver-carrito{
+    width: 5%;
+    cursor: pointer;
 }
+
+/*Modal content*/
+.modal-container{
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*for the top*/
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar{
+    display: none;
+}
+
+.modal-header{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.modal-header-title{
+    font-family: 'Pacifico', cursive;
+    color: rgba(207, 45, 45, 1);
+}
+
+.btn-modal{
+    cursor: pointer;
+    color: rgba(207, 45, 45, 1);
+}
+
+.modal-container > .modal-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modal-container > div > img{
+    height: 120px;
+    width: 120px;
+}
+
+.total-content{
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.eliminar-prod{
+    cursor: pointer;
+    color: rgba(207, 45, 45, 1);
+}
+
+.cantidad-carrito{
+    height: 25px;
+    width: 25px;
+    background-color: rgba(207, 45, 45, 1);
+    color: #fff;
+    border-radius: 50%;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    display: none;
+}
+.ver-carrito{
+    width: 40px;
+    height: 40px;
+}
+.restar{
+    color: rgb(236, 207, 41);
+    background-color: #000;
+    cursor: pointer;
+}
+.sumar{
+    color: rgb(236, 207, 41);
+    background-color: #000;
+    cursor: pointer;
+}
+/*Contacto*/
 input, textarea{
     border-radius: 5px;
     border-color: rgba(156, 207, 45, 0.774);
 }
-.input{
+input::placeholder{
+    font-family: 'Outfit', sans-serif;
+}
+textarea::placeholder{
+    font-family: 'Outfit', sans-serif;
+}
+#msj-confirm{
     font-family: 'Outfit', sans-serif;
 }
 /*Footer*/

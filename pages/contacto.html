@@ -14,6 +14,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&family=Pacifico&display=swap"
     rel="stylesheet">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script defer src="../js/bootstrap.bundle.min.js"></script>
+  <script defer src="../js/contacto.js"></script>
 </head>
 
 <body>
@@ -44,9 +47,6 @@
           <li class="nav-item">
             <a class="nav-link" href="././contacto.html">Contáctanos</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="././carrito.html"><img src="../assets/iconos/cart.svg" alt=""></a>
-          </li>
         </ul>
       </div>
     </div>
@@ -58,28 +58,18 @@
       <p class="parrafo">Si tenés dudas, consultas, y/o comentarios para realizar, te brindamos este espacio, queremos
         seguir mejorando!</p>
     </div>
-    <form action="" class="form-contacto d-flex flex-column gap-2 align-items-center">
-      <div class="input d-flex flex-column w-100">
-        <label for="name">Nombre</label>
-        <input type="text">
-      </div>
-      <div class="input d-flex flex-column w-100">
-        <label for="surname">Apellido</label>
-        <input type="text">
-      </div>
-      <div class="input d-flex flex-column w-100">
-        <label for="">Email</label>
-        <input type="email" name="email" id="email">
-      </div>
-      <div class="input d-flex flex-column w-100">
-        <label for="mensaje"></label>
-        <textarea name="mensaje" id="" cols="30" rows="10">Mensaje</textarea>
-      </div>
-      <div class="btn-contacto">
-        <input type="submit" value="Enviar">
-      </div>
-    </form>
   </main>
+  
+  <section class="container d-flex flex-column align-items-center text-center ">
+    <form action="" id="form" class="d-flex flex-column gap-2">
+      <input type="text" id="nombre" placeholder="Nombre">
+      <input type="text" id="apellido" placeholder="Apellido">
+      <input type="email" id="email" name="" placeholder="Email">
+      <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Deje su mensaje aquí"></textarea>
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+  
   <!--Footer-->
   <footer class="container-fluid">
     <section class="container datos-sitio text-center pt-3">
@@ -109,7 +99,7 @@
       </div>
     </section>
   </footer>
-  <script src="../js/bootstrap.bundle.min.js"></script>
+  
 </body>
 
 </html>
