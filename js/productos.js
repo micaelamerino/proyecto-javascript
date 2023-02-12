@@ -71,7 +71,7 @@ const productos = [
     },
     {
         id: 11,
-        nombre: "GRANCE COLOR",
+        nombre: "GRANDE COLOR",
         precio: 1600,
         img: '../assets/imagenes/color.jpg',
         cantidad: 1,

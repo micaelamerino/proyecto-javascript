@@ -1,19 +1,18 @@
 //Datos de contacto
-let form = document.getElementById("form");
+const form = document.getElementById("form");
 form.addEventListener("submit", capturarDatos);
 
 function capturarDatos(e) {
     e.preventDefault()
 
-    let nombre = document.getElementById("nombre").value;
-    let apellido = document.getElementById("apellido").value;
-    let email = document.getElementById("email").value;
-    let mensaje = document.getElementById("mensaje").value;
+    const nombre = document.getElementById("nombre").value;
+    const apellido = document.getElementById("apellido").value;
+    const email = document.getElementById("email").value;
+    const mensaje = document.getElementById("mensaje").value;
 
-    if (nombre === "" || apellido === "" || email === "" || mensaje === "") {
-        swal('Oops...', 'Complete todos los campos', 'error');
-    } else {
-        swal(`¡Gracias ${nombre}, formulario completado exitosamente!`, "", "success");
+    (nombre === "" || apellido === "" || email === "" || mensaje === "") ? swal('Oops...', 'Complete todos los campos', 'error') : swal(`¡Gracias ${nombre}, formulario completado exitosamente!`, "", "success");
+
+    form.reset();
+
     };
-};
 
