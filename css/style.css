@@ -197,7 +197,9 @@
 }
 
 .total-content{
+    font-family: 'Outfit', sans-serif;
     font-size: 25px;
+    font-weight: 500;
     padding: 20px;
     text-align: center;
     padding-top: 20px;
@@ -232,6 +234,18 @@
     color: rgb(236, 207, 41);
     background-color: #000;
     cursor: pointer;
+}
+
+.btn-finalizar{
+    background-color: #fff;
+    color: rgba(207, 45, 45, 1);
+    border-radius: 10px;
+    border: 2px solid rgba(207, 45, 45, 1);
+    padding: 5px;
+    margin-bottom: 20px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
 }
 /*Contacto*/
 input, textarea{

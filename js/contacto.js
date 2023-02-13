@@ -4,7 +4,7 @@ form.addEventListener("submit", capturarDatos);
 
 function capturarDatos(e) {
     e.preventDefault()
-
+    
     const nombre = document.getElementById("nombre").value;
     const apellido = document.getElementById("apellido").value;
     const email = document.getElementById("email").value;
@@ -16,3 +16,5 @@ function capturarDatos(e) {
 
     };
 
+        
+     
