@@ -250,7 +250,7 @@
 /*Contacto*/
 input, textarea{
     border-radius: 5px;
-    border-color: rgba(156, 207, 45, 0.774);
+    border: 2px solid rgba(156, 207, 45) ;
 }
 input::placeholder{
     font-family: 'Outfit', sans-serif;
@@ -260,6 +260,13 @@ textarea::placeholder{
 }
 #msj-confirm{
     font-family: 'Outfit', sans-serif;
+}
+.btn-form{
+    border: 2px solid rgba(156, 207, 45) ;
+    border-radius: 5px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
 }
 /*Footer*/
 .copyright{

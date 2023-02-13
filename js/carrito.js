@@ -1,11 +1,4 @@
-//Función pintar botón de 'finalizar compra'
-const pintarBoton = () =>{
-    const btnFinalizar = document.createElement('button');
-    btnFinalizar.className = "btn-finalizar";
-    btnFinalizar.textContent = "Finalizar compra"
-    modalContainer.appendChild(btnFinalizar)
-};
-//Función pintar el carrito con los productos que el cliente selecciona
+
 const pintarCarrito = () => {
     modalContainer.innerHTML = "";
     modalContainer.style.display = "flex";
@@ -86,18 +79,26 @@ const pintarCarrito = () => {
 
     const totalCompra = document.createElement("div");
     totalCompra.className = "total-content";
-    if(total >= 4000){
+    if (total >= 4000) {
         totalCompra.innerHTML = `Total a pagar: $ ${total}. Tiene envío gratis!`;
-    } else if (total > 0){
+    } else if (total > 0) {
         totalCompra.innerHTML = `Su compra es de: $  ${total}. Total con envío: $ ${totalEnvio}`;
     } else {
         totalCompra.innerHTML = `No hay ningún producto en su carrito`
     };
 
     modalContainer.append(totalCompra);
-    if(total>0){
+    //Función pintar botón de 'finalizar compra'
+    const pintarBoton = () => {
+        const btnFinalizar = document.createElement('button');
+        btnFinalizar.className = "btn-finalizar";
+        btnFinalizar.textContent = "Finalizar compra"
+        modalContainer.appendChild(btnFinalizar)
+    };
+
+    if (total > 0) {
         pintarBoton();
-    };   
+    };
 };
 
 verCarrito.addEventListener("click", pintarCarrito);
