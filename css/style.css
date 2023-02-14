@@ -191,9 +191,13 @@
     margin: 10px;
 }
 
-.modal-container > div > img{
+.modal-content > img{
     height: 120px;
     width: 120px;
+    border-radius: 2px;
+}
+.card > img{
+    border-radius: 4px;
 }
 
 .total-content{
