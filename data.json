@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "nombre": "Chico X 3",
+        "precio": 1100,
+        "img": "../assets/imagenes/mixtos.jpg",
+        "cantidad":1
+    },
+    {
+        "id": 2,
+        "nombre": "Mediano X 3",
+        "precio": 2900,
+        "img": "../assets/imagenes/mixtos.jpg",
+        "cantidad":1
+    },
+    {
+        "id": 3,
+        "nombre": "Grande X 3",
+        "precio": 4100,
+        "img": "../assets/imagenes/mixtos.jpg",
+        "cantidad":1
+    },
+    {
+        "id": 4,
+        "nombre": "Super X 3",
+        "precio": 6150,
+        "img": "../assets/imagenes/mixtos.jpg",
+        "cantidad":1
+    },
+    {
+        "id": 5,
+        "nombre": "Chico blanco",
+        "precio": 500,
+        "img": "../assets/imagenes/blancos.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 6,
+        "nombre": "Mediano blanco",
+        "precio": 1000,
+        "img": "../assets/imagenes/blancos.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 7,
+        "nombre": "Grande blanco",
+        "precio": 1500,
+        "img": "../assets/imagenes/blancos.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 8,
+        "nombre": "Super blanco",
+        "precio": 2000,
+        "img": "../assets/imagenes/blancos.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 9,
+        "nombre": "Chico color",
+        "precio": 600,
+        "img": "../assets/imagenes/color.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 10,
+        "nombre": "Mediano color",
+        "precio": 1100,
+        "img": "../assets/imagenes/color.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 11,
+        "nombre": "Grande color",
+        "precio": 1600,
+        "img": "../assets/imagenes/color.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 12,
+        "nombre": "Super color",
+        "precio": 2100,
+        "img": "../assets/imagenes/color.jpg",
+        "cantidad": 1
+    }
+]

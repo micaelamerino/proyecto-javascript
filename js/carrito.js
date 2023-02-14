@@ -25,12 +25,12 @@ const pintarCarrito = () => {
         carritoContent.className = "modal-content";
         carritoContent.innerHTML = `
             <img src = "${product.img}">
-            <h3>${product.nombre}</h3>
-            <p>$ ${product.precio}</p>
-            <span class =" restar"> - </span>
-            <p>Cantidad: ${product.cantidad}</p>
-            <span class =" sumar"> + </span>
-            <p>Total: $ ${product.cantidad * product.precio}</p>
+            <h3 class = "subtitulo2">${product.nombre}</h3>
+            <p class = "parrafo">$ ${product.precio}</p>
+            <span class ="restar"> - </span>
+            <p class = "parrafo">Cantidad: ${product.cantidad}</p>
+            <span class ="sumar"> + </span>
+            <p class = "parrafo">Total: $ ${product.cantidad * product.precio}</p>
         `;
 
         modalContainer.append(carritoContent);
@@ -80,14 +80,15 @@ const pintarCarrito = () => {
     const totalCompra = document.createElement("div");
     totalCompra.className = "total-content";
     if (total >= 4000) {
-        totalCompra.innerHTML = `Total a pagar: $ ${total}. Tiene envío gratis!`;
-    } else if (total > 0) {
+        totalCompra.innerHTML = `Total a pagar: $ ${total}. Tiene envío gratis`;
+    }  else if (total > 0) {
         totalCompra.innerHTML = `Su compra es de: $  ${total}. Total con envío: $ ${totalEnvio}`;
-    } else {
+    }  else {
         totalCompra.innerHTML = `No hay ningún producto en su carrito`
     };
 
     modalContainer.append(totalCompra);
+
     //Función pintar botón de 'finalizar compra'
     const pintarBoton = () => {
         const btnFinalizar = document.createElement('button');
@@ -98,6 +99,7 @@ const pintarCarrito = () => {
 
     if (total > 0) {
         pintarBoton();
+
     };
 };
 
