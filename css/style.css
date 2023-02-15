@@ -120,11 +120,11 @@
 }
 
 /*Comprar*/
-.compra-online a{
+p> a{
     text-decoration: none;
     color: rgba(207, 45, 45, 1);
 }
-.compra-online a:hover{
+p> a:hover{
     color: rgba(207, 45, 45, 0.774);
 }
 
