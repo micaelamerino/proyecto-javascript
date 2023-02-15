@@ -94,13 +94,16 @@ const pintarCarrito = () => {
         const btnFinalizar = document.createElement('button');
         btnFinalizar.className = "btn-finalizar";
         btnFinalizar.textContent = "Finalizar compra"
+        btnFinalizar.addEventListener('click', () =>{
+           location.href = "https://www.mercadopago.com.ar/"
+        });
         modalContainer.appendChild(btnFinalizar)
     };
 
     if (total > 0) {
         pintarBoton();
 
-    };
+    };    
 };
 
 verCarrito.addEventListener("click", pintarCarrito);
