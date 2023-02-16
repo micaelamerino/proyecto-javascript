@@ -16,7 +16,13 @@ Está inspirado en el negocio familiar de una amiga, y en él fui depositando lo
 
 * Funciones
 
+* Bucles
+
 * Métodos
+
+* Manipulación del DOM
+
+* Eventos
 
 * LocalStorage
 
